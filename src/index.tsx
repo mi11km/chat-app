@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './index.css';
 
-import App from './App';
+import Home from './components/Home';
 import Chat from './components/Chat';
 import Login from './components/Login';
 
@@ -15,7 +15,7 @@ ReactDOM.render(
         <Router>
             <Switch>
                 <Route exact path="/">
-                    <App />
+                    <Home />
                 </Route>
                 <Route path="/login">
                     <Login />
