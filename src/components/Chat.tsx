@@ -42,12 +42,12 @@ const Chat = () => {
     }, [messageHistory]);
 
     return (
-        <div className="container m-auto h-screen w-full">
-            <h1 className="text-center my-6 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        <div className="container m-auto h-screen w-full bg-gray-300">
+            <h1 className="text-center py-6 text-3xl leading-8 font-extrabold tracking-tight text-gray-700 sm:text-4xl">
                 WebSocketを使ったちゃっとあぷり
             </h1>
 
-            <ul className="h-3/4 overflow-scroll" id="chat-screen">
+            <ul className="h-3/4 overflow-scroll bg-gray-100 rounded-md" id="chat-screen">
                 {messageHistory.map((msg, index) => (
                     <li key={index} className="my-1 flex justify-between">
                         <div className="flex">
