@@ -3,8 +3,11 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './index.css';
+
 import App from './App';
 import Chat from './components/Chat';
+import Login from './components/Login';
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -13,6 +16,9 @@ ReactDOM.render(
             <Switch>
                 <Route exact path="/">
                     <App />
+                </Route>
+                <Route path="/login">
+                    <Login />
                 </Route>
                 <Route path="/chat">
                     <Chat />
