@@ -24,7 +24,7 @@
         "build": "craco build",
         "test": "craco test",
         "eject": "react-scripts eject",
-        "format": "npx prettier --write ."
+        "format": "npx prettier --write . --config ./.prettierrc.json"
     },
     "eslintConfig": {
         "extends": [
@@ -45,6 +45,7 @@
         ]
     },
     "devDependencies": {
+        "@tailwindcss/forms": "^0.3.2",
         "autoprefixer": "^9.8.6",
         "postcss": "^7.0.35",
         "prettier": "2.2.1",

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../images/logo.svg';
+import './Home.css';
 
-const App = () => {
+const Home = () => {
     return (
         <div className="text-center">
             <header className="App-header">
@@ -17,4 +17,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default Home;
