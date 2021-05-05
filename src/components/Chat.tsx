@@ -7,7 +7,7 @@ interface Message {
 }
 
 const Chat = () => {
-    const socket = useRef<WebSocket>(new WebSocket('ws://localhost:8080/room'));
+    const socket = useRef<WebSocket>(new WebSocket('ws://localhost:8080/room')); // todo host動的に変えれるようにする
     const [message, setMessage] = useState('');
     const [messageHistory, setMessageHistory] = useState<Message[]>([]);
 
